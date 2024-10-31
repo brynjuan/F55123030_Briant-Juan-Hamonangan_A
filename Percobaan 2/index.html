@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Percobaan 2</title>
+</head>
+
+<body>
+
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+  </ul>
+
+  <ol>
+    <li>Budi</li>
+    <li>Asri</li>
+    <li>Mamat</li>
+  </ol>
+
+  <table border="1">
+    <tr>
+      <th>No</th>
+      <th>Nim</th>
+      <th>Nama</th>
+      <th>Prodi</th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>F55121030</td>
+      <td>Briant Juan Hamonangan</td>
+      <td>S1-Teknik Informatika</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>F55123001</td>
+      <td>Raiyan</td>
+      <td>S1-Teknik Informatika</td>
+    </tr>
+  </table>
+  <br>
+
+  <table border="1">
+    <tr>
+      <th>No</th>
+      <th>Nim</th>
+      <th>Nama</th>
+      <th>Prodi</th>
+      <th>Asdos</th>
+      <th colspan="5">Absen</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>F55123030</td>
+      <td>Briant Juan Hamonangan</td>
+      <td>S1-Teknik Informatika</td>
+      <td rowspan="2">Pemorgraman Web-1 Kelas A</td>
+      <td>Hadir</td>
+      <td>Hadir</td>
+      <td>Hadir</td>
+      <td>Alpa</td>
+      <td>Alpa</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>F55123030</td>
+      <td>Briant Juan Hamonangan</td>
+      <td>S1-Teknik Informatika</td>
+      <td>Alpa</td>
+      <td>Hadir</td>
+      <td>Hadir</td>
+      <td>Hadir</td>
+      <td>Alpa</td>
+    </tr>
+  </table>
+  <br>
+  <table border="1" width="100%">
+    <tr>
+      <th height="40px">No</th>
+      <th>Nim</th>
+      <th width="40%">Nama</th>
+      <th>Prodi</th>
+      <th>Asdos</th>
+      <th colspan="5">Absen</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>F55123030</td>
+      <td>Briant Juan Hamonangan</td>
+      <td>S1-Teknik Informatika</td>
+      <td rowspan="2">Pemorgraman Web-1 Kelas A</td>
+      <td>Hadir</td>
+      <td>Hadir</td>
+      <td>Hadir</td>
+      <td>Alpa</td>
+      <td>Alpa</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>F55123030</td>
+      <td>Briant Juan Hamonangan</td>
+      <td>S1-Teknik Informatika</td>
+      <td>Alpa</td>
+      <td>Hadir</td>
+      <td>Hadir</td>
+      <td>Hadir</td>
+      <td>Alpa</td>
+    </tr>
+  </table>
+  <br>
+
+  <form action="">
+    <!--Input-->
+    <label>Nama</label><br>
+    <input type="text" name="nama" id="nama"><br>
+    <label>Email</label><br>
+    <input type="email" name="mail" id="mail"><br>
+    <label>Password</label><br>
+    <input type="password" name="pass" id="pass"><br>
+    <label>Jenis Kelamin</label><br>
+    <input type="radio" name="jk" id="jk" value="Laki-Laki"> Laki-Laki
+    <input type="radio" name="jk" id="jk" value="Perempuan"> Perempuan
+    <br>
+    <label>Mata Kuliah</label><br>
+    <input type="checkbox" name="mk" id="mk" value="Pemorgraman Web-1"> Pemorgraman Web-1
+    <input type="checkbox" name="mk" id="mk" value="RPL"> RPL
+    <input type="checkbox" name="mk" id="mk" value="Pemorgraman Mobile"> Pemorgraman Mobile
+    <input type="checkbox" name="mk" id="mk" value="Pemorgraman Dasar"> Pemorgraman Dasar
+    <br>
+    <label>Tanggal Lahir</label><br>
+    <input type="date" name="tglLahir" id="tglLahir"><br>
+    <label>Pilih Warna</label><br>
+    <input type="color" name="Warna" id="Warna"><br>
+    <label>Upload File</label><br>
+    <input type="file" name="file" id="file"><br>
+    <label for="Qty"></label><br>
+    <input type="number" name="qty" id="qty"><br>
+    <label>Ini tersembunyi tapi ada</label><br>
+    <input type="hidden" name="hilang" id="hilang" value="Secret"><br>
+    <label>1 - 100</label>
+    <input type="range" name="range" id="range" value="50"><br>
+    <label>Tombol Submit</label><br>
+    <input type="submit" name="submit" id="submit"><br>
+    <label>Tombol Reset</label><br>
+    <input type="reset" name="reset" id="reset"><br>
+
+    <!-- input lain -->
+    <label>Teks Area</label><br>
+    <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea><br>
+
+    <label>Pilih Agama</label>
+    <select name="agama" id="agama">
+      <option value="">~ Pilih Agama</option>
+      <option value="Islam">Islam</option>
+      <option value="Kristen">Kristen</option>
+      <option value="Hindu">Hindu</option>
+      <option value="Budha">Budha</option>
+      <option value="Katolik">Katolik</option>
+    </select><br>
+
+    <label>Pilih Siswa</label><br>
+    <input list="datasiswa" name="siswa" id="siswa">
+    <datalist id="datasiswa">
+      <option value="Rahmat">Rahmat</option>
+      <option value="Asep">Asep</option>
+      <option value="Budi">Budi</option>
+      <option value="Mamat">Mamat</option>
+      <option value="Andi">Andi</option>
+    </datalist><br><br>
+
+    <button>Ini Tombol</button><br><br>
+
+    <fieldset>
+      <legend>Pendaftaran</legend>
+      <label>Nama</label><br>
+      <input type="text" name="" id=""><br>
+      <label>Umur</label><br>
+      <input type="number" name="" id=""><br><br>
+
+      <button>Daftar</button>
+    </fieldset>
+  </form>
+
+
+</body>
+
+</html>
