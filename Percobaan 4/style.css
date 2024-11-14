@@ -1,0 +1,73 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+.h1 {
+  color: "red";
+}
+p {
+  color: "blue";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+p.paragraf {
+  color: orange;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: left;
+  line-height: 1.5cm;
+}
+
+span {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: darkslateblue;
+}
+
+body {
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+div {
+  border: 2px black solid;
+  width: 450px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+div.box-1 {
+  background-color: darksalmon;
+}
+
+div.box-2 {
+  background-color: black;
+  color: white;
+}
+
+div.box-3 {
+  background-color: greenyellow;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: dodgerblue;
+  padding: 10px;
+}
+
+.flex-container {
+  padding: 10px;
+  margin: 5px;
+  width: 300px;
+  border: 2px black solid;
+  background-color: gray;
+}
