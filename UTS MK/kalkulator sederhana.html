@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            text-align: center;
+            margin-top: 70px;
+        }
+        .calculator {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        input[type="text"] {
+            width: 100px;
+            padding: 10px;
+            text-align: center;
+            margin-right: 10px; /* Jarak antara input */
+        }
+        button {
+            padding: 10px 10px;
+            margin: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Kalkulator Sederhana</h1>
+        <div class="input-group">
+            <input type="text" id="angka1" placeholder="masukan angka">
+            <input type="text" id="angka2" placeholder="masukan angka">
+        </div>
+        <div>
+            <button onclick="hitung('+')">+</button>
+            <button onclick="hitung('-')">-</button>
+            <button onclick="hitung('*')">×</button>
+            <button onclick="hitung('/')">÷</button>
+        </div>
+        <input type="text" id="hasil" placeholder="Hasil" readonly>
+    </div>
+    <script>
+        function hitung(operator) {
+            const angka1 = parseFloat(document.getElementById('angka1').value);
+            const angka2 = parseFloat(document.getElementById('angka2').value);
+            let hasil;
+
+            if (operator === '+') hasil = angka1 + angka2;
+            else if (operator === '-') hasil = angka1 - angka2;
+            else if (operator === '*') hasil = angka1 * angka2;
+            else if (operator === '/') hasil = angka2 !== 0 ? angka1 / angka2 : 'Error';
+            if (typeof hasil === 'number') {
+               hasil = hasil.toFixed(2);}
+            document.getElementById('hasil').value = hasil;
+        }
+    </script>
+</body>
+</html>
